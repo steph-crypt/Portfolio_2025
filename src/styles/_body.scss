@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Headshot animation */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(150%); /* start far off screen to the right */
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-10%); /* slight overshoot for a natural feel */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); /* end in final resting spot */
+  }
+}
+
+@keyframes slideLoop-1 {
+  0% {
+    transform: translateX(-200%); /* start off-screen left */
+  }
+  100% {
+    transform: translateX(120%);  /* slide off-screen right */
+  }
+}
+
+@keyframes slideLoop-2 {
+  0% {
+    transform: translateX(-230%); /* start off-screen left */
+  }
+  100% {
+    transform: translateX(120%);  /* slide off-screen right */
+  }
+}
+
+@keyframes slideLoop-3 {
+  0% {
+    transform: translateX(-215%); /* start off-screen left */
+  }
+  100% {
+    transform: translateX(120%);  /* slide off-screen right */
+  }
+}
+
+@keyframes slideLoop-4 {
+  0% {
+    transform: translateX(-300%); /* start off-screen left */
+  }
+  100% {
+    transform: translateX(120%);  /* slide off-screen right */
+  }
+}
+
+@keyframes slideLoop-5 {
+  0% {
+    transform: translateX(-400%); /* start off-screen left */
+  }
+  100% {
+    transform: translateX(120%);  /* slide off-screen right */
+  }
+}
+
+@keyframes slideLoop-6 {
+  0% {
+    transform: translateX(-350%); /* start off-screen left */
+  }
+  100% {
+    transform: translateX(120%);  /* slide off-screen right */
+  }
+}
+
+
+
+/* styles.css */
+@keyframes dropBounce-1 {
+  0% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-header-1 {
+  animation: dropBounce-1 1s ease-out forwards;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -1rem;
+}
+
+.bounce-header-3 {
+  animation: dropBounce-1 3s ease-out forwards;
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+body {
+   background: #ffce00cc;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header-wrapper {
+        position: relative;
+
+        .cloud-2 {
+            width: 15rem;
+            position: absolute;
+            bottom: -40%;
+            z-index: -1;
+
+        .cloud-3 {
+            width: 7rem;
+            position: absolute;
+            bottom: 10%;
+            z-index: -1;
+        }
+
+        h1, h3 {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            text-shadow: 1px 1px 5px #fb4949;
+
+        }
+
+        h1 {
+         text-shadow: 1px 1px 5px #fb4949;
+        }
+
+    }
+    }
+
+    .slide-loop-cloud-1 {
+        position: absolute;           
+        animation: slideLoop-1 30s linear infinite;
+        white-space: nowrap;        
+    }
+
+    .slide-loop-cloud-2 {
+        position: absolute;           
+        animation: slideLoop-2 30s linear infinite;
+        white-space: nowrap;         
+    }
+
+    .slide-loop-cloud-3 {
+        position: absolute;           
+        animation: slideLoop-3 30s linear infinite;
+        white-space: nowrap;         
+    }
+
+    .slide-loop-cloud-4 {
+        position: absolute;           
+        animation: slideLoop-4 30s linear infinite;
+        white-space: nowrap;         
+    }
+
+    .slide-loop-cloud-5 {
+        position: absolute;           
+        animation: slideLoop-5 30s linear infinite;
+        white-space: nowrap;         
+    }
+
+    .slide-loop-cloud-6 {
+        position: absolute;           
+        animation: slideLoop-6 30s linear infinite;
+        white-space: nowrap;         
+    }
+
+    .cloud-1 {
+        width: 8rem;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .cloud-4 {
+        width: 15rem;
+        position: absolute;
+        bottom: 700%;
+    }
+
+    .cloud-5 {
+        width: 7rem;
+        position: absolute;
+        bottom: 50%;
+    }
+
+    .cloud-6 {
+        width: 12rem;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .about-me-wrapper {
+        display: flex;
+        align-items: start;
+ 
+    }
+
+    .experience-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .bio {
+        color: black;
+        padding: 1rem;
+        
+        p {
+                margin-top: -1rem;
+
+            font-size: 1.5rem;
+        }
+
+        .about-me {
+            h3 {
+                font-size: 2rem
+            }
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            border: 4px solid black;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 1rem;
+
+            @media only screen and (min-width: 768px) {
+                justify-content: center;
+                align-items: start;
+                width: 50%
+            }
+        
+
+        }
+
+        .experience {
+            h4 {
+                font-size: 2rem
+            }
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            border: 4px solid black;
+            border-radius: 1rem;
+            padding: 2rem;
+    
+
+            @media only screen and (min-width: 768px) {
+                justify-content: center;
+                align-items: flex-end;
+                width: 50%
+            }
+
+            p {
+                @media only screen and (min-width: 768px) {
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+    .circle {
+        width: 30rem;
+        height: 30rem;
+        background-color: #ff6b6b;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 0;
+        border: 3px solid black;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    .header {
+        text-align: center;
+        color: black;
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .headshot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: slideInRight 1s ease-out forwards;
+        position: relative;
+        z-index: 5;
+
+        padding: 1rem;
+            .portrait {
+                position: relative;
+                width: 30rem;
+                border-radius: 50%;
+            }
+
+            .speech-bubble {
+                position: absolute;
+                width: 20rem;
+                right: -27%;
+                top: -18%;
+            }
+
+            .bubble-text {
+                position: absolute;
+                z-index: 5;
+                right: -13%;
+                top: 9%;
+            }
+
+             p {
+                font-size: 1.2rem;
+                transform: rotate(-15deg);
+                }
+    }
+
+    .projects {
+        h3 {
+           color: black;
+
+        strong {
+            color: black; 
+        }
+    }
+
+    .spreadshirt {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        img {
+            width: 50rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .spreadshop {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        img {
+            width: 50rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .links {
+        color: black;
+    }
+
+    .contact {
+        color: black;
+    }
+    }
+}

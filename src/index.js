@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles/main.scss';
+
+
+// header with name and expertise
+//bio/experience
+//headshot
+//projects - spreadshirt, spreadshop, chat degrass tyson, amazon reviews compiler
+//contact
+//linkd in/github
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

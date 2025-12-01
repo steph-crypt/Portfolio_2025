@@ -1,0 +1,70 @@
+.contact {
+     margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+        color: #fff;
+        background: #000;
+        border-radius: 1rem;
+        padding: 1rem;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+         h4 {
+          font-weight: 700;
+          font-size: 40px;
+                margin: 1rem 1rem -0rem 1rem;
+        font-family: "Audiowide", sans-serif;
+
+         }
+
+         p {
+          font-weight: 600;
+          font-size: 20px;
+        font-family: "Audiowide", sans-serif;
+
+         }
+    }
+
+      .links {
+        display: flex;
+        justify-content: center;
+        background: #000;
+
+        a {
+          transition: .2s;
+           font-family: "Audiowide", sans-serif;
+          font-size: 20px;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1rem;
+          margin: 1rem;
+          border-radius: 1rem;
+          font-weight: 700;
+          background-color: #e3caf0;
+          color: rgb(0, 0, 0);
+          
+          svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            
+          }
+
+          .download {
+          
+            svg {
+             width: 2rem;
+             padding-left: 1rem;
+            }
+          }
+
+
+        }
+
+        a:hover {
+          box-shadow: 8px 8px #adf9dc;
+          transition: .2s;
+        }
+    }

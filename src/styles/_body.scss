@@ -37,60 +37,6 @@ html {
   font-style: normal;
 }
 
-@mixin pulsating-halo (
-  $pulse-duration: 2s,
-  $pulse-scale: 1.12,
-  $halo-color: rgba(0, 204, 255, 0.6),
-  $halo-size: 40px,
-  $halo-intensity: 1.8
-) {
-  position: relative;
-  display: inline-block;
-  animation: pulse $pulse-duration ease-in-out infinite;
-
-  // The actual image pulsates
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50%      { transform: scale($pulse-scale); }
-  }
-
-  // Glowing halo (created with pseudo-element so you keep only one <img>)
-  &::after {
-    content: '';
-    position: absolute;
-    inset: -#{$halo-size};
-    border-radius: 50%;                     // remove if your image isn't round
-    background: radial-gradient(circle, $halo-color 0%, transparent 70%);
-    animation: halo-pulse $pulse-duration ease-in-out infinite;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  @keyframes halo-pulse {
-    0%, 100% {
-      transform: scale(0.9);
-      opacity: 0.6;
-    }
-    50% {
-      transform: scale(1.15);
-      opacity: $halo-intensity;
-    }
-  }
-}
-
-// Subtle pulse (perfect for profile pictures / icons
-.pulsating {
-  @include pulsating-halo(
-    $pulse-duration: 3s,
-    $pulse-scale: 1.07,
-  
-  );
-}
-
-
-body {
-   background: #d7eeffcc;
-}
 
 .swirl {
   display: flex;
@@ -166,4 +112,27 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   background: #d7eeffcc;
+}
+
+
+.portfolio {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }

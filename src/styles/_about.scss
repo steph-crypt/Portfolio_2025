@@ -1,4 +1,66 @@
+@mixin pulsating-halo (
+  $pulse-duration: 1.5s,
+  $pulse-scale: 1.12,
+  $halo-color: rgba(0, 204, 255, 0.6),
+  $halo-size: 40px,
+  $halo-intensity: 2.8
+) {
+  position: relative;
+  display: inline-block;
+  animation: pulse $pulse-duration ease-in-out infinite;
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale($pulse-scale); }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -#{$halo-size};
+    border-radius: 50%;                     
+    background: radial-gradient(circle, $halo-color 0%, transparent 70%);
+    animation: halo-pulse $pulse-duration ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  @keyframes halo-pulse {
+    0%, 100% {
+      transform: scale(0.9);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.15);
+      opacity: $halo-intensity;
+    }
+  }
+}
+
+.pulsating {
+  @include pulsating-halo(
+    $pulse-duration: 2.5s,
+    $pulse-scale: 1.07,
+  );
+}
+
+.desktop {
+    display: none;
+    @media only screen and (min-width: 768px) {
+        display: flex;  
+    }
+}
+
+.mobile {
+    display: flex;
+    @media only screen and (min-width: 768px) {
+        display: none;  
+    }
+}
+
+
 .about {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +68,7 @@
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-style: normal;
-    }
+}
 
     .about-me-wrapper {
         flex-direction: column;
@@ -40,8 +102,6 @@
             margin-top: -1rem;
             font-size: 1.3rem;
         }
-
-
 
         .about-me {
             h3 {
@@ -94,7 +154,7 @@
                 align-items: flex-end;
                 }
             }
-            display: flex;
+            
             justify-content: center;
             align-items: start;
             flex-direction: column;
@@ -120,10 +180,12 @@
         .icons {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            margin-top: 4rem;
             
 
             @media only screen and (min-width: 768px) {
                 margin-right: 6rem;
+                margin: 0 4rem;
             }
                 
             svg {
@@ -131,11 +193,10 @@
                 background: linear-gradient(127deg, rgb(128 126 126 / 22%), rgba(255, 255, 255, 0.25));
                 box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
                 border-radius: 1rem;
-                width: 5rem;
-                height: 5rem;
+                width: 7rem;
+                height: 7rem;
                 padding: 1rem;
                 margin: .5rem;
             }
-
         }
     }

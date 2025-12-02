@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 html {
-  --s: 140px; /* control the size */
+  --s: 140px;
   --c1: #ff2bb1;
   --c2: #ff9dbe;
   
@@ -69,19 +69,16 @@ html {
   z-index: -10;
 }
 
-/* Pink ring – clockwise */
 .swirl:hover::before {
   background: #db97ff;
   animation: 1s clockwise infinite;
 }
 
-/* Yellow ring – counterclockwise */
 .swirl:hover::after {
   background: #000;
   animation: 2s counterclockwise infinite;
 }
 
-/* Keyframes (unchanged – work perfectly with 100% width/height) */
 @keyframes clockwise {
   0%   { top: -7px; left: 0; }
   12%  { top: -5px; left: 5px; }

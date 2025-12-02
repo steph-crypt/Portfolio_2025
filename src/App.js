@@ -47,7 +47,7 @@ export default function App() {
               </div>
             </div>
             <div className="experience swirl mobile">
-                    <h4>Professional Experience</h4>
+                    <h3>Professional Experience</h3>
                     <p>In my 4.5 years as a professional software engineer, I have developed high-performance, user-centric features using React, modernized legacy systems with TypeScript, and collaborated closely with cross-functional teams to deliver fast, measurable outcomes. My work also included designing robust A/B testing experiments, building and iterating on user-facing flows, integrating headless CMS systems, and modernizing core codebases to enable long-term scalability. I am passionate about creating engaging, interactive experiences, driving data-informed UX improvements, and delivering reliable, high-quality products for global audiences.</p>
                 </div>
             <div className="experience-wrapper">
@@ -60,7 +60,7 @@ export default function App() {
                   <Ruby/>
               </div>
                 <div className="experience swirl desktop">
-                    <h4>Professional Experience</h4>
+                    <h3>Professional Experience</h3>
                     <p>In my 4.5 years as a professional software engineer, I have developed high-performance, user-centric features using React, modernized legacy systems with TypeScript, and collaborated closely with cross-functional teams to deliver fast, measurable outcomes. My work also included designing robust A/B testing experiments, building and iterating on user-facing flows, integrating headless CMS systems, and modernizing core codebases to enable long-term scalability. I am passionate about creating engaging, interactive experiences, driving data-informed UX improvements, and delivering reliable, high-quality products for global audiences.</p>
                 </div>
               
@@ -109,7 +109,7 @@ export default function App() {
       </section>
       {/* Contact */}
       <section className="contact">
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <p>Email: sgandsteph@gmail.com</p>
         <div className="links">
           <div className="cta-row-1">

@@ -30,7 +30,7 @@ export default function App() {
             <h2 className="bounce-header-3">Frontend AI Engineer</h2>
           </div>
           <div className="headshot pulsating">
-            <img className="portrait" src="/ed2ce59c-49d4-4294-9552-f15d813efd20.png" alt="Headshot" />
+            <img className="portrait" src="/ed2ce59c-49d4-4294-9552-f15d813efd20.png" alt="Headshot" loading="eager"/>
           </div>
           </header>
           <section className='about'>
@@ -43,7 +43,7 @@ export default function App() {
                   </p>
                 </div>
                 <div className="neural-image">
-                  <img className="pulsating" src="/—Pngtree—human brain neural network connections_21128488.png" alt="neural" />
+                  <img className="pulsating" src="/—Pngtree—human brain neural network connections_21128488.png" alt="neural" loading="eager"/>
                 </div>
               </div>
               <div className="experience swirl mobile">
@@ -75,32 +75,31 @@ export default function App() {
               <div class="slides">
                 <div id="slide-1">
                   <a 
-                          href="https://www.spreadshirt.de/" 
-                          target="_blank" 
-                          rel="noreferrer"
-                        >
-                          <img src="/Screenshot 2025-12-01 at 14.09.44.png" alt="chatdegrasstyson" />
-                    
-                        </a>
+                    href="http://www.chatdegrasstyson.com/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <img src="/Screenshot 2025-12-01 at 14.09.44.png" alt="chatdegrasstyson" loading="lazy"/>
+                  </a>
                 </div>
                 <div id="slide-2">
                   <a 
-                          href="https://www.spreadshirt.de/" 
-                          target="_blank" 
-                          rel="noreferrer"
-                        >
-                          <img src="/Screenshot 2025-11-08 at 16.18.24.png" alt="spreadshirt" />
-                    
-                        </a>
+                    href="https://www.spreadshirt.de/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <img src="/Screenshot 2025-11-08 at 16.18.24.png" alt="spreadshirt" loading="lazy"/>
+                  </a>
                 </div>
                 <div id="slide-3">
                   <a 
-                          href="https://www.spreadshop.de/" 
-                          target="_blank" 
-                          rel="noreferrer"
-                        >
-                          <img src="/Screenshot 2025-11-08 at 16.19.57.png" alt="spreadshop" />
-                        </a>
+                    href="https://www.spreadshop.de/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <img src="/Screenshot 2025-11-08 at 16.19.57.png" alt="spreadshop" loading="lazy"/>
+                    <span></span>
+                  </a>
                 </div>
               </div>
             </div>

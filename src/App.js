@@ -75,7 +75,7 @@ export default function App() {
               <div class="slides">
                 <div id="slide-1">
                   <a 
-                    href="http://www.chatdegrasstyson.com/" 
+                    href="https://huggingface.co/spaces/sgandsteph1/ChatDegrassTyson" 
                     target="_blank" 
                     rel="noreferrer"
                   >

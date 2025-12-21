@@ -101,6 +101,16 @@ export default function App() {
                     <span></span>
                   </a>
                 </div>
+                 <div id="slide-4">
+                  <a 
+                    href="https://sofiastephengineer.com/" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    <img src="/Screenshot 2025-12-21 at 16.03.26.png" alt="portfolio" loading="lazy"/>
+                    <span></span>
+                  </a>
+                </div>
               </div>
             </div>
         </section>

@@ -3,19 +3,23 @@ name: Build and Deploy to gh-pages
 on:
   push:
     branches:
-      - main  # Trigger on pushes to main
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required for pushing to gh-pages
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history needed for orphan branch
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # or whatever version you use locally
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
@@ -27,7 +31,8 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}  # ← Use PAT instead of GITHUB_TOKEN
           publish_dir: ./build
           publish_branch: gh-pages
-          force_orphan: true  # Makes the gh-pages branch clean (only build files)
+          force_orphan: true
+          commit_message: "Deploy build ${{ github.sha }}"

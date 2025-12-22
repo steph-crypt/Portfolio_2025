@@ -84,18 +84,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Stack image and caption vertically */
-
-  @media only screen and (min-width: 768px) {
-    // padding-right: 40px;
-  }
+  flex-direction: column;
 
   img {
-    width: 50%;
+    width: 40%;
     object-fit: cover;
     border-radius: 1rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
+
+        @media only screen and (min-width: 420px) {
+            width: 50%;
+        }
 
         @media only screen and (min-width: 768px) {
             width: 99%;
@@ -113,13 +113,18 @@
   width: 100%;
 
   .site-description {
-    background-color: white;
-    color: #000;
+    background-color: #000;
+    color: #FFF;
     border-radius: 1rem;
     padding: 2rem;
     font-family: "Audiowide", sans-serif;
     margin-top: -1rem; 
-    max-width: 50%;
+    max-width: 40%;
+
+  
+        @media only screen and (min-width: 420px) {
+              max-width: 50%;
+        }
 
         @media only screen and (min-width: 768px) {
             max-width: 90%;

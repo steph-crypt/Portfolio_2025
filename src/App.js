@@ -61,7 +61,7 @@ export default function App() {
                 </div>
                 <div className="experience swirl desktop">
                     <h3>Professional Experience</h3>
-                    <p>In my 4.5 years as a professional software engineer, I have developed high-performance, user-centric features using React, modernized legacy systems with TypeScript, and collaborated closely with cross-functional teams to deliver fast, measurable outcomes. My work also included designing robust A/B testing experiments, building and iterating on user-facing flows, integrating headless CMS systems, and modernizing core codebases to enable long-term scalability. I am passionate about creating engaging, interactive experiences, driving data-informed UX improvements, and delivering reliable, high-quality products for global audiences.</p>
+                    <p>As an Frontend and AI engineer I have developed super-intelligent chatbots for my company's customer service needs and and for my own personal projects. Likewise, I deliver high-performance, user-centric features using React, modernized legacy systems with TypeScript, and collaborated closely with cross-functional teams to deliver fast, measurable outcomes. My work also includes designing robust A/B testing experiments, building and iterating on user-facing flows, integrating headless CMS systems, and modernizing core codebases to enable long-term scalability. I am passionate about creating engaging, interactive experiences, driving data-informed UX improvements, and delivering reliable, high-quality products for global audiences.</p>
                 </div>
               </div>
             </div>

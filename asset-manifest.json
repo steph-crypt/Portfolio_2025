@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b96c7d8.css",
+    "main.js": "/static/js/main.6c028a4e.js",
+    "static/js/453.6264690d.chunk.js": "/static/js/453.6264690d.chunk.js",
+    "static/media/Sofia Stephenson - CV 2026 (1).pdf": "/static/media/Sofia Stephenson - CV 2026 (1).baa5c072b89989ff0ae8.pdf",
+    "static/media/react-svgrepo-com.svg": "/static/media/react-svgrepo-com.598d90dd4f36234e376cbc6ccd571550.svg",
+    "static/media/rails-svgrepo-com.svg": "/static/media/rails-svgrepo-com.0a90bb86b156e040cc366eec3ef251fc.svg",
+    "static/media/typescript-icon-svgrepo-com.svg": "/static/media/typescript-icon-svgrepo-com.5a8731afb70af69ca7846c3a07080df4.svg",
+    "static/media/next-js-svgrepo-com.svg": "/static/media/next-js-svgrepo-com.9b02d90e63d996118dbd8e7a03b089ad.svg",
+    "static/media/python-svgrepo-com.svg": "/static/media/python-svgrepo-com.488bdeab8b8535b3561d8ac221f2449a.svg",
+    "static/media/download-minimalistic-svgrepo-com.svg": "/static/media/download-minimalistic-svgrepo-com.3f22f47583a55c0b95c02b05eb0d81fd.svg",
+    "static/media/github-svgrepo-com.svg": "/static/media/github-svgrepo-com.c46ef63e5c5d3c50e2e0a7220fc5fef6.svg",
+    "static/media/linkedin-svgrepo-com.svg": "/static/media/linkedin-svgrepo-com.c341cc1c307221b0fe42599c619ceeaf.svg",
+    "index.html": "/index.html",
+    "static/media/javascript-svgrepo-com.svg": "/static/media/javascript-svgrepo-com.3fffb795c7c2ee2174146fccf11fcdc5.svg",
+    "main.0b96c7d8.css.map": "/static/css/main.0b96c7d8.css.map",
+    "main.6c028a4e.js.map": "/static/js/main.6c028a4e.js.map",
+    "453.6264690d.chunk.js.map": "/static/js/453.6264690d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b96c7d8.css",
+    "static/js/main.6c028a4e.js"
+  ]
+}

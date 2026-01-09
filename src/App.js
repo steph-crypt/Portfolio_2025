@@ -30,7 +30,7 @@ export default function App() {
             <h2 className="bounce-header-3">Frontend AI Engineer</h2>
           </div>
           <div className="headshot pulsating">
-            <img className="portrait" src="/ed2ce59c-49d4-4294-9552-f15d813efd20.png" alt="Headshot" loading="eager"/>
+            <img className="portrait" src="/ed2ce59c-49d4-4294-9552-f15d813efd20-compressed.png" alt="Headshot" loading="eager"/>
           </div>
           </header>
           <section className='about'>
